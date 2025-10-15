@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Documentación del Proyecto: Fiochat - Asistente de IA Educativo
+![Logo de Fiochat - Cerebro Neuronal](./src/fiochatlogo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Propósito y Contexto Educativo
 
-## Available Scripts
+Este chatbot interactivo, denominado **Fiochat**, fue desarrollado como una herramienta de apoyo para **clases de nivel secundaria** (o preparatoria).
 
-In the project directory, you can run:
+Su principal objetivo es:
 
-### `npm start`
+1. **Facilitar el aprendizaje** de conceptos complejos relacionados con la **Inteligencia Artificial** (IA), el **Aprendizaje Automático** (*Machine Learning*) y las **Redes Neuronales**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Ofrecer un **asistente virtual** que responde a las preguntas de los estudiantes de manera **amigable, concisa y motivadora**, adoptando el rol de un profesor virtual.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Servir como un ejemplo práctico de cómo se puede integrar una **API de modelo de lenguaje grande (LLM)** en una aplicación web moderna.
 
-### `npm test`
+El bot está configurado con una instrucción de sistema específica para mantener un tono adecuado y respuestas breves, mejorando la experiencia educativa.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Componentes y Tecnologías Utilizadas
 
-### `npm run build`
+El desarrollo de esta aplicación de chat se basa en la librería **React**, garantizando una interfaz de usuario dinámica y eficiente. Se utilizaron los siguientes componentes clave y librerías de terceros:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **React (Frontend):** La biblioteca principal para construir la interfaz de usuario.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **React Bootstrap:** Utilizado para el **diseño responsivo y la estética** de la interfaz. Esto incluye componentes como `Container`, `Row`, `Col`, `Button`, `Card` y `Form`, que aseguran una buena experiencia de usuario tanto en escritorio como en dispositivos móviles.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **ReactMarkdown:** Permite al chatbot renderizar texto enriquecido, utilizando el formato Markdown (por ejemplo, **negrita**) que la IA genera para mejorar la legibilidad de las explicaciones.
 
-### `npm run eject`
+* **API de Gemini (gemini-2.5-flash):** El corazón de la aplicación. Esta API se utiliza para la generación de texto, lo que le da al chatbot su capacidad de respuesta y conocimiento.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Gestión de Estado (`useState`, `useEffect`):** Se emplean *Hooks* de React para manejar el historial de la conversación, el estado de escritura (`isTyping`) y el scroll automático al final del chat.
