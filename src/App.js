@@ -7,7 +7,7 @@ import Fiologo from './fiochatlogo.png';
 
 // --- Configuración de la API de Gemini ---
 // NOTA: La API Key se deja para que Canvas la reemplace.
-const GEMINI_API_KEY = 'AIzaSyDmTFV6aOq0E0B8bTf_gwf31ZTRXwa_Rrs'; 
+const GEMINI_API_KEY = 'AIzaSyBvsG2-obd1hMqarF3hILxEsr_ZXJ8cYtc'; 
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 // 1. CONTEXTO INICIAL: Definimos la instrucción de sistema para guiar a la IA.
