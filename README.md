@@ -1,5 +1,5 @@
 # Documentación del Proyecto: Fiochat - Asistente de IA Educativo
-![Logo de Fiochat - Cerebro Neuronal](./src/fiochatlogo.png)
+![Logo de Fiochat - Cerebro Neuronal](./fiologo.png)
 
 ## Propósito y Contexto Educativo
 
